@@ -13,7 +13,7 @@ const cors = require("cors");
 const { title } = require("process");
 const { register } = require("module");
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 // 모든 도메인에서의 요청을 허용하는 CORS 설정
 app.use(cors());
